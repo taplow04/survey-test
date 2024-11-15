@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  width: 700px;
+  height: 300px;
+  background-color: rgb(78, 163, 242);
+  border-radius: 8px solid black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.welcome-screen, .thank-you, .survey-form {
+  text-align: center;
+  max-width: 700px;
+  max-height: 500px;
+}
+.thank-you h2{
+  margin-top: 150px;
+}
+.survey-form h3{
+  margin-left: 600px;
+}
+.welcome-screen button{
+  margin-top: 100px;
+}
+h1, h2 {
+  color: #070202;
+}
+
+button {
+  /* background-color: #4CAF50; */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+.start{
+  background-color: yellow;
+  color: #070202;
+}
+.prev{
+  background-color: blue;
+}
+.skip{
+  background-color: yellow;
+  color: #070202;
+}
+.sur{
+  background-color: rebeccapurple;
+}
+.next{
+  background-color: rgb(188, 17, 168);
+}
+button:hover {
+  background-color: #45a049;
+}
+
+.dot-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.dot-label {
+  display: inline-block;
+}
+
+.dot-label input[type="radio"] {
+  display: none;
+}
+
+.dot {
+  margin-top: 50px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.dot-label input[type="radio"]:checked + .dot {
+  background-color: red;
+}
+
+textarea {
+  margin-top: 5px;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  height: 80px;
+}
+
+.navigation-buttons button {
+  margin-top: 30px;
+  margin-right: 5px;
+}
